@@ -1,0 +1,234 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.aside {
+    width: 100%;
+    max-width: 350px;
+    background: #f7f7f7;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.head {
+    position: relative;
+    overflow: hidden;
+}
+
+.head h3 {
+    position: relative;
+    background: #f9f9f9;
+    display: inline-block;
+    padding-right: 15px;
+    z-index: 3;
+}
+
+.head hr {
+    width: 100%;
+    height: 6px;
+    background: #e0e0e0;
+    position: absolute;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    margin: 0;
+
+}
+
+.matches-list {
+    display: inline-block;
+    width: 100%;
+}
+
+.match-item{
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 20px;
+}
+
+.match-item:last-child{
+    margin-bottom: 5px;
+    border: none;
+}
+
+.match-info {
+    margin-bottom: 7px;
+}
+
+.match-code {
+    font-size: 14px;
+}
+
+span.match-name {
+    font-weight: bold;
+    margin-left: 7px;
+    font-size: 15px;
+}
+
+.match-rates {
+    display: inline-block;
+    width: 100%;
+}
+
+.rate-item {
+    float: left;
+    width: 33.333%;
+}
+
+.rate-button {
+    cursor: pointer;
+    border: 1px solid #3c3c3c;
+    display: inline-block;
+}
+
+.rate-button input {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.rate-button .status {
+    width: 40px;
+    height: 18px;
+    background: #3c3c3c;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+}
+
+.rate-button .rate {
+    width: 35px;
+    height: 18px;
+    color: #3c3c3c;
+    font-size: 11px;
+    float: left;
+    line-height: 18px;
+    text-align: center;
+}
+
+.rate-button input:checked ~ .rate {
+    background: #fbcd01;
+  }
+  
+
+span.rate-win {
+    display: block;
+    font-size: 10px;
+    color: #8e8e8e;
+}
+
+.result {
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #cecece;
+    float: left;
+    line-height: 1;
+}
+
+.result > div{
+    width: 50%;
+    float: left;
+}
+
+.fold-select{
+    font-size: 15px;
+}
+
+select[name="fold"]{
+    margin-left: 10px;
+    padding: 7px;
+    padding-right: 45px;
+    font-size: 15px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    font-weight: 500;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+') no-repeat 42px center;
+    background-size: 13px;
+    -webkit-appearance: none;
+    
+}
+
+select::before{
+    width: 25px;
+    height: 20px;
+    content: " ";
+    background: red;
+}
+
+select[name="fold"] option{
+    font-weight: normal;
+    
+}
+
+select[name="fold"]:focus{
+    outline: none;
+}
+
+.result-content {
+    text-align: right;
+    font-size: 13px;
+}
+
+.result-content div{
+    margin-bottom: 5px;
+}
+
+.result-content div::selection{
+    color: #71b5d0;
+}
+
+.result-content div span{
+    font-weight: bold;
+}
+
+
+.footer{
+    background: #fbcd01;
+    padding: 15px;
+    float: left;
+}
+
+.footer img {
+    max-height: 25px;
+    vertical-align: middle;
+}
+
+.footer .btn-go{
+    font-size: 14px;
+    font-weight: bold;
+    color: #3c3c3c;
+    text-decoration: none;
+    margin-top: 5px;;
+    float: right;
+    position: relative;
+    padding-right: 25px;
+}
+
+.footer .btn-go::after{
+    content:"\2192" ;
+    position: absolute;
+    font-size: 18px;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition:  all .3s ease;
+}
+
+.footer .btn-go:hover::after{
+   right: 0;
+}
